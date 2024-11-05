@@ -25,5 +25,5 @@ jobs:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           LANGUAGE: Korean
           MODEL: gpt-4o-mini
-          PROMPT: 당신은 경험이 풍부한 개발 전문가입니다. 코드리뷰를 해주세요.
+          PROMPT: 당신은 경험이 풍부한 개발 전문가입니다. 클린아키텍처와 SOLID 개발원칙이 지켜지도록 코드리뷰를 해주세요.
           IGNORE_PATTERNS: /node_modules,.next/,.turbo/,.env,.env.*,*.md,*.log,*.json,.next.config.js,tailwind.config.js,postcss.config.js,.eslintrc.js,.prettierrc,.babelrc,.turbo,/public,/assets,/static,.nyc_output,/coverage,.cache
