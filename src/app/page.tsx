@@ -22,7 +22,9 @@ export default function Home() {
       const data = await ApiService.searchRestaurants(userInput);
       setRecomList(data);
     } catch (err) {
-      setError(err instanceof Error ? err.message : '알 수 없는 오류가 발생했습니다');
+      setError(
+        err instanceof Error ? err.message : '알 수 없는 오류가 발생했습니다'
+      );
     } finally {
       setIsLoading(false);
     }
@@ -65,7 +67,7 @@ export default function Home() {
             </h2>
             <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6'>
               {recomList.map((item) => (
-                <RecommendationCard key={item.id} item={item} />
+                <RecommendationCard key={item.idx} item={item} />
               ))}
             </div>
           </div>

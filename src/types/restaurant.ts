@@ -1,5 +1,5 @@
 export interface BaseItem {
-  id: number;
+  idx: number;
   name: string;
   rating: number;
   color: string;
